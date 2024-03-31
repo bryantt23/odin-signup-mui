@@ -16,20 +16,22 @@ function App() {
                         backgroundRepeat: "no-repeat",
                         height: '100vh',
                         backgroundSize: 'cover',
+                        paddingTop: 20
                     }}
                 >
                     <Box
                         sx={{
-                            paddingTop: 20,
                             display: 'flex',
                             alignItems: 'center',
-                            justifyContent: 'center'
+                            justifyContent: 'center',
+                            backgroundColor: 'rgba(0, 0, 0, 0.33)',
+                            height: 200
                         }}>
                         <Box
                             component="img"
                             sx={{
-                                height: 100,
-                                width: 100,
+                                height: 150,
+                                width: 150,
                                 maxHeight: { xs: 233, md: 167 },
                                 maxWidth: { xs: 350, md: 250 },
                             }}
@@ -42,12 +44,19 @@ function App() {
                     </Box>
                 </Box>
             </Grid>
-            <Grid item sm={7} sx={{ padding: 2 }}>
+            <Grid item sm={7} sx={{ padding: 2 }} className="right-column" >
                 <Typography level="h3">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
                 </Typography>
                 <Typography level="h3">You <em>know</em> you want to.</Typography>
-                <Grid container spacing={2}>
-                    <Typography level="h3">Let's do this!</Typography>
+                <Grid container className="input-area" sx={{
+                    padding: 2,
+                    boxShadow: 3,
+                    // bgcolor: 'white',
+                    borderRadius: 2,
+                }}>
+                    <Grid item xs={12}>
+                        <Typography level="h3">Let's do this!</Typography>
+                    </Grid>
                     <Grid item xs={6}>
                         <TextField
                             required
