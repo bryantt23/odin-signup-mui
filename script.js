@@ -1,5 +1,5 @@
 // Your React code using MUI components will go here
-const { Container, Grid, Paper, Box, Typography } = MaterialUI;
+const { Container, Grid, Paper, Box, Typography, TextField } = MaterialUI;
 
 function App() {
     return (
@@ -42,8 +42,67 @@ function App() {
                     </Box>
                 </Box>
             </Grid>
-            <Grid item sm={7}>
-                <Paper style={{ backgroundColor: "grey" }}>Item 2</Paper>
+            <Grid item sm={7} sx={{ padding: 2 }}>
+                <Typography level="h3">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                </Typography>
+                <Typography level="h3">You <em>know</em> you want to.</Typography>
+                <Grid container spacing={2}>
+                    <Typography level="h3">Let's do this!</Typography>
+                    <Grid item xs={6}>
+                        <TextField
+                            required
+                            label="First Name"
+                            variant="outlined"
+                            defaultValue="Thor"
+                            fullWidth
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <TextField
+                            label="Last Name"
+                            variant="outlined"
+                            fullWidth
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <TextField
+                            required
+                            label="Email"
+                            variant="outlined"
+                            type="email"
+                            fullWidth
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <TextField
+                            label="Phone Number"
+                            variant="outlined"
+                            name="phone"
+                            fullWidth
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <TextField
+                            error
+                            helperText="Passwords do not match"
+                            required
+                            label="Password"
+                            type="password"
+                            variant="outlined"
+                            fullWidth
+                        />
+                    </Grid>
+                    <Grid item xs={6}>
+                        <TextField
+                            error
+                            required
+                            label="Confirm Password"
+                            type="password"
+                            variant="outlined"
+                            fullWidth
+                        />
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     );
