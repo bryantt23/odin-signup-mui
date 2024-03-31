@@ -1,5 +1,5 @@
 // Your React code using MUI components will go here
-const { Container, Grid, Paper, Box, Typography, TextField } = MaterialUI;
+const { Container, Grid, Paper, Box, Typography, TextField, Button, Link } = MaterialUI;
 
 function App() {
     return (
@@ -112,6 +112,18 @@ function App() {
                         />
                     </Grid>
                 </Grid>
+                <Box>
+                    <Button
+                        style={{
+                            borderRadius: 35,
+                            backgroundColor: "#596D48",
+                            // padding: "18px 36px",
+                            // fontSize: "18px"
+                        }} variant="contained">Contained</Button>
+                    <Typography>
+                        Blah <Link to="#">blah</Link>
+                    </Typography>
+                </Box>
             </Grid>
         </Grid>
     );
