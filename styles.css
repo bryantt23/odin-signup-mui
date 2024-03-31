@@ -1,3 +1,18 @@
+/* Define your @font-face rule */
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('/fonts/Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Using the font in your CSS */
 body {
   margin: 0;
+}
+
+.odin {
+  font-size: 50px;
+  color: white;
+  font-family: 'Norse Bold', sans-serif; /* Fallback to sans-serif if Norse Bold isn't available */
 }
