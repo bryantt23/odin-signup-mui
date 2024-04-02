@@ -121,8 +121,7 @@ function App() {
                             // fontSize: "18px"
                         }} variant="contained">Contained</Button>
                     <Typography>
-                        Blah <Link to="#">blah</Link>
-                    </Typography>
+                        Already have an account? <Link to="#">Log in</Link>                    </Typography>
                 </Box>
             </Grid>
         </Grid>
