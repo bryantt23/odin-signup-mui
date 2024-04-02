@@ -45,13 +45,18 @@ function App() {
                 </Box>
             </Grid>
             <Grid item sm={7} sx={{ padding: 2 }} className="right-column" >
-                <Typography level="h3">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
-                </Typography>
-                <Typography level="h3">You <em>know</em> you want to.</Typography>
+                <Box sx={{ height: 254, display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }} >
+                    <Box>
+                        <Typography level="h2" fontSize="xl" >This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <Typography level="h2">You <em>know</em> you want to.</Typography>
+                    </Box>
+                </Box>
                 <Grid container className="input-area" sx={{
                     padding: 2,
                     boxShadow: 3,
-                    // bgcolor: 'white',
                     borderRadius: 2,
                 }}>
                     <Grid item xs={12}>
@@ -115,11 +120,9 @@ function App() {
                 <Box>
                     <Button
                         style={{
-                            borderRadius: 35,
                             backgroundColor: "#596D48",
-                            // padding: "18px 36px",
-                            // fontSize: "18px"
-                        }} variant="contained">Contained</Button>
+                            margin: "10px 0 10px"
+                        }} variant="contained">Create Account</Button>
                     <Typography>
                         Already have an account? <Link to="#">Log in</Link>                    </Typography>
                 </Box>
